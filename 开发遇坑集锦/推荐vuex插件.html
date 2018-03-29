@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>推荐vuex插件 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="在本文中，将向你展示5个特性，你可以通过 Vuex 插件轻松地添加到下一个项目中。  状态持久化  同步标签页、窗口  语言本地化  管理多个加载状态  缓存操作 1. 状态持久化vuex-persistedstate 使用浏览器的本地存储（ local storage ）对状态（ state ）进行持久化。这意味着刷新页面或关闭标签页都不会删除你的数据。 一个很好的例子就是购物车：如果用户不小心">
+<meta property="og:type" content="website">
+<meta property="og:title" content="推荐vuex插件">
+<meta property="og:url" content="http://yoursite.com/开发遇坑集锦/推荐vuex插件.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="在本文中，将向你展示5个特性，你可以通过 Vuex 插件轻松地添加到下一个项目中。  状态持久化  同步标签页、窗口  语言本地化  管理多个加载状态  缓存操作 1. 状态持久化vuex-persistedstate 使用浏览器的本地存储（ local storage ）对状态（ state ）进行持久化。这意味着刷新页面或关闭标签页都不会删除你的数据。 一个很好的例子就是购物车：如果用户不小心">
+<meta property="og:image" content="https://segmentfault.com/img/bVZhKv?w=400&h=370">
+<meta property="og:image" content="https://segmentfault.com/img/bVZhMI?w=400&h=370">
+<meta property="og:image" content="https://segmentfault.com/img/bVZhPE?w=400&h=370">
+<meta property="og:image" content="https://segmentfault.com/img/bVZhQX?w=400&h=370">
+<meta property="og:image" content="https://segmentfault.com/img/bVZhR6?w=400&h=370">
+<meta property="og:updated_time" content="2018-03-26T03:44:40.223Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="推荐vuex插件">
+<meta name="twitter:description" content="在本文中，将向你展示5个特性，你可以通过 Vuex 插件轻松地添加到下一个项目中。  状态持久化  同步标签页、窗口  语言本地化  管理多个加载状态  缓存操作 1. 状态持久化vuex-persistedstate 使用浏览器的本地存储（ local storage ）对状态（ state ）进行持久化。这意味着刷新页面或关闭标签页都不会删除你的数据。 一个很好的例子就是购物车：如果用户不小心">
+<meta name="twitter:image" content="https://segmentfault.com/img/bVZhKv?w=400&h=370">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/开发遇坑集锦/推荐vuex插件.html" class="article-date">
+  <time datetime="2018-03-26T03:18:25.000Z" itemprop="datePublished">2018-03-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      推荐vuex插件
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在本文中，将向你展示5个特性，你可以通过 Vuex 插件轻松地添加到下一个项目中。</p>
+<ul>
+<li><p>状态持久化</p>
+</li>
+<li><p>同步标签页、窗口</p>
+</li>
+<li><p>语言本地化</p>
+</li>
+<li><p>管理多个加载状态</p>
+</li>
+<li><p>缓存操作</p>
+<h1 id="1-状态持久化"><a href="#1-状态持久化" class="headerlink" title="1. 状态持久化"></a>1. 状态持久化</h1><p><a href="https://github.com/robinvdvleuten/vuex-persistedstate" target="_blank" rel="noopener">vuex-persistedstate </a>使用浏览器的本地存储（ local storage ）对状态（ state ）进行持久化。这意味着刷新页面或关闭标签页都不会删除你的数据。</p>
+<p>一个很好的例子就是购物车：如果用户不小心关闭了一个标签，他们可以重新打开并回到之前页面的状态。</p>
+<p><img src="https://segmentfault.com/img/bVZhKv?w=400&amp;h=370" alt="img"></p>
+<h1 id="2-同步标签页、窗口"><a href="#2-同步标签页、窗口" class="headerlink" title="2. 同步标签页、窗口"></a>2. 同步标签页、窗口</h1><p><a href="https://github.com/xanf/vuex-shared-mutations" target="_blank" rel="noopener">vuex-shared-mutations </a>可在不同的标签页之间同步状态。它通过 <code>mutation</code> 将状态储存到本地存储（local storage）来实现。选项卡、窗口中的内容更新时触发储存事件，重新调用 <code>mutation</code> ，从而保持状态同步。</p>
+<p><img src="https://segmentfault.com/img/bVZhMI?w=400&amp;h=370" alt="img"></p>
+<h1 id="3-语言本地化"><a href="#3-语言本地化" class="headerlink" title="3. 语言本地化"></a>3. 语言本地化</h1><p><a href="https://github.com/dkfbasel/vuex-i18n" target="_blank" rel="noopener">vuex-i18n </a>允许你轻松地用多种语言存储内容。让你的应用切换语言时更容易。</p>
+<p>一个很酷的功能是你可以存储带有标记的字符串，比如<code>&quot;Hello {name}, this is your Vue.js app.&quot;</code>。所有的翻译版本都会在标记的地方使用相同的字符串。</p>
+<p><img src="https://segmentfault.com/img/bVZhPE?w=400&amp;h=370" alt="img"></p>
+<h1 id="4-管理多个加载状态"><a href="#4-管理多个加载状态" class="headerlink" title="4. 管理多个加载状态"></a>4. 管理多个加载状态</h1><p><a href="https://github.com/f/vuex-loading" target="_blank" rel="noopener">vuex-loading </a>有助于你管理应用中的多个加载状态。这个插件适用于状态变化频繁且复杂的实时应用程序。</p>
+<p><img src="https://segmentfault.com/img/bVZhQX?w=400&amp;h=370" alt="img"></p>
+<h1 id="5-缓存操作"><a href="#5-缓存操作" class="headerlink" title="5. 缓存操作"></a>5. 缓存操作</h1><p><a href="https://github.com/superwf/vuex-cache" target="_blank" rel="noopener">vuex-cache </a>可以缓存 Vuex 的 <code>action</code>。例如，如果你从服务器检索数据，这个插件将在第一次调用该<code>action</code>时缓存结果，然后在之后的<code>dispatch</code>中，直接返回缓存的值。必要时清除缓存也很简单。</p>
+<p><img src="https://segmentfault.com/img/bVZhR6?w=400&amp;h=370" alt="img"></p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/开发遇坑集锦/推荐vuex插件.html" data-id="cjfbvr15i0005q4r86tpg2zng" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/03/26/面试题/">面试题</a>
+          </li>
+        
+          <li>
+            <a href="/2018/03/26/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
