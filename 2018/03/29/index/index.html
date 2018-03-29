@@ -173,6 +173,9 @@
         <div class="entry-content">
           <h3 id="移动端开发遇坑之路"><a href="#移动端开发遇坑之路" class="headerlink" title="移动端开发遇坑之路"></a>移动端开发遇坑之路</h3><h4 id="渲染时间问题"><a href="#渲染时间问题" class="headerlink" title="渲染时间问题"></a>渲染时间问题</h4><p>开发过程中，在调接口时会发现，数据渲染没错误，但是控制台报错….. 我们知道请求数据是异步请求，但是浏览器加载是先从html和css加载，后来才开始加载js，所以当浏览器加载css完毕之后，数据还没请求完毕，所以控制台会报错。。。。。</p>
 <p>解决办法： 我是写了个（data &amp;&amp; data.id），这样在data加载完毕之前，数据不会渲染。。。</p>
+<h4 id="路由地址栏参数改变url不变页面不刷新"><a href="#路由地址栏参数改变url不变页面不刷新" class="headerlink" title="路由地址栏参数改变url不变页面不刷新"></a>路由地址栏参数改变url不变页面不刷新</h4><p>我们在本页面改变地址栏参数页面不会刷新加载，所以当路由变化时进行监控。使用v-router的beforeRouteUpdate进行组件内守卫</p>
+<p>官网地址：<a href="https://router.vuejs.org/zh-cn/advanced/navigation-guards.html" target="_blank" rel="noopener">https://router.vuejs.org/zh-cn/advanced/navigation-guards.html</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">beforeRouteUpdate(to, from, next) &#123;</span><br><span class="line">    this.wareKind = to.query.kindId;</span><br><span class="line">    this.getDstCitiesByWareKind()</span><br><span class="line">    this.getWareList()</span><br><span class="line">    next()</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
 
         </div>
       </article>
@@ -197,7 +200,7 @@
     <div class="container">
       
 <section id="comment">
-  <!-- <h1 class="title">留言</h1> -->
+  <!-- <h1 class="title">Comments</h1> -->
 
   
     <!-- 多说评论框 start -->
