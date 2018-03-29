@@ -16,7 +16,7 @@
 
   <!--Open Graph Title-->
   
-      <meta property="og:title" content="let和const特性与区别"/>
+      <meta property="og:title" content="推荐vuex插件"/>
   
   <!--Open Graph Description-->
   
@@ -42,7 +42,7 @@
     </script>
   <!-- Title -->
   
-  <title>let和const特性与区别 - Hexo</title>
+  <title>推荐vuex插件 - Hexo</title>
 
 
   <link rel="shortcut icon" href="/favicon.ico">
@@ -161,7 +161,7 @@
         <!-- Title date & tags -->
         <div class="post-header">
           <h1 class="entry-title">
-            let和const特性与区别
+            推荐vuex插件
             
           </h1>
          
@@ -171,13 +171,63 @@
           </p>
         <!-- Post Main Content -->
         <div class="entry-content">
-          <p>11111111113333333333</p>
+          <p>在本文中，将向你展示5个特性，你可以通过 Vuex 插件轻松地添加到下一个项目中。</p>
+<ul>
+<li><p>状态持久化</p>
+</li>
+<li><p>同步标签页、窗口</p>
+</li>
+<li><p>语言本地化</p>
+</li>
+<li><p>管理多个加载状态</p>
+</li>
+<li><p>缓存操作</p>
+<h1 id="1-状态持久化"><a href="#1-状态持久化" class="headerlink" title="1. 状态持久化"></a>1. 状态持久化</h1><p><a href="https://github.com/robinvdvleuten/vuex-persistedstate" target="_blank" rel="noopener">vuex-persistedstate </a>使用浏览器的本地存储（ local storage ）对状态（ state ）进行持久化。这意味着刷新页面或关闭标签页都不会删除你的数据。</p>
+<p>一个很好的例子就是购物车：如果用户不小心关闭了一个标签，他们可以重新打开并回到之前页面的状态。</p>
+<p><img src="https://segmentfault.com/img/bVZhKv?w=400&amp;h=370" alt="img"></p>
+<h1 id="2-同步标签页、窗口"><a href="#2-同步标签页、窗口" class="headerlink" title="2. 同步标签页、窗口"></a>2. 同步标签页、窗口</h1><p><a href="https://github.com/xanf/vuex-shared-mutations" target="_blank" rel="noopener">vuex-shared-mutations </a>可在不同的标签页之间同步状态。它通过 <code>mutation</code> 将状态储存到本地存储（local storage）来实现。选项卡、窗口中的内容更新时触发储存事件，重新调用 <code>mutation</code> ，从而保持状态同步。</p>
+<p><img src="https://segmentfault.com/img/bVZhMI?w=400&amp;h=370" alt="img"></p>
+<h1 id="3-语言本地化"><a href="#3-语言本地化" class="headerlink" title="3. 语言本地化"></a>3. 语言本地化</h1><p><a href="https://github.com/dkfbasel/vuex-i18n" target="_blank" rel="noopener">vuex-i18n </a>允许你轻松地用多种语言存储内容。让你的应用切换语言时更容易。</p>
+<p>一个很酷的功能是你可以存储带有标记的字符串，比如<code>&quot;Hello {name}, this is your Vue.js app.&quot;</code>。所有的翻译版本都会在标记的地方使用相同的字符串。</p>
+<p><img src="https://segmentfault.com/img/bVZhPE?w=400&amp;h=370" alt="img"></p>
+<h1 id="4-管理多个加载状态"><a href="#4-管理多个加载状态" class="headerlink" title="4. 管理多个加载状态"></a>4. 管理多个加载状态</h1><p><a href="https://github.com/f/vuex-loading" target="_blank" rel="noopener">vuex-loading </a>有助于你管理应用中的多个加载状态。这个插件适用于状态变化频繁且复杂的实时应用程序。</p>
+<p><img src="https://segmentfault.com/img/bVZhQX?w=400&amp;h=370" alt="img"></p>
+<h1 id="5-缓存操作"><a href="#5-缓存操作" class="headerlink" title="5. 缓存操作"></a>5. 缓存操作</h1><p><a href="https://github.com/superwf/vuex-cache" target="_blank" rel="noopener">vuex-cache </a>可以缓存 Vuex 的 <code>action</code>。例如，如果你从服务器检索数据，这个插件将在第一次调用该<code>action</code>时缓存结果，然后在之后的<code>dispatch</code>中，直接返回缓存的值。必要时清除缓存也很简单。</p>
+<p><img src="https://segmentfault.com/img/bVZhR6?w=400&amp;h=370" alt="img"></p>
+</li>
+</ul>
 
         </div>
       </article>
     </div>
     <!-- Pre or Next -->
     
+	<div class="container" >
+           <ul class="pager">
+    	     
+      	     <li class="previous">
+              <a href="/2018/03/26/开发遇坑集锦/let和const特性与区别/" rel="prev">下一篇</a>
+             </li>
+           
+           
+              <li class="next">
+              <a href="/2018/03/26/开发遇坑集锦/获取cookie，设置cookie/" rel="prev">上一篇</a>
+            </li>
+           
+          </ul>
+       </div>
+　　　　<!-- Comments -->
+    <div class="container">
+      
+<section id="comment">
+  <!-- <h1 class="title">留言</h1> -->
+
+  
+</section>
+
+
+    </div>
+   
 　　　　
   </div>
 </div>
