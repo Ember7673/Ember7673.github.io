@@ -16,7 +16,7 @@
 
   <!--Open Graph Title-->
   
-      <meta property="og:title" content="开发遇坑集锦"/>
+      <meta property="og:title" content="Hexo"/>
   
   <!--Open Graph Description-->
   
@@ -24,7 +24,7 @@
   <meta property="og:site_name" content="Hexo"/>
   <!--Type page-->
   
-      <meta property="og:type" content="article" />
+      <meta property="og:type" content="website" />
   
   <!--Page Cover-->
   
@@ -42,7 +42,7 @@
     </script>
   <!-- Title -->
   
-  <title>开发遇坑集锦 - Hexo</title>
+  <title>归档：2018/4 - Hexo</title>
 
 
   <link rel="shortcut icon" href="/favicon.ico">
@@ -153,77 +153,101 @@
 
 
   <!-- Main Content -->
-  <div class="content-area">
-  <div class="post">
-    <!-- Post Content -->
-    <div class="container">
-      <article>
-        <!-- Title date & tags -->
-        <div class="post-header">
-          <h1 class="entry-title">
-            开发遇坑集锦
+  
+
+<!-- Main Content -->
+<div class="archive content-area">
+  <div class="container">
+    <h1 class="entry-title">2018/4</h1>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <!-- Use lodash to classify posts. See https://lodash.com/docs#groupBy
+          1. group site.posts by year
+          2. sort posts-in-one-year by Month and Day
+        -->
+        
+
+        
+          <h2 class="year">2018</h2>
+          <ul class="list">
             
-          </h1>
-         
-        </div>
-         <p class="a-posted-on">
-          2018-03-29
-          </p>
-        <!-- Post Main Content -->
-        <div class="entry-content">
-          <h3 id="移动端开发遇坑之路"><a href="#移动端开发遇坑之路" class="headerlink" title="移动端开发遇坑之路"></a>移动端开发遇坑之路</h3><h4 id="渲染时间问题"><a href="#渲染时间问题" class="headerlink" title="渲染时间问题"></a>渲染时间问题</h4><p>开发过程中，在调接口时会发现，数据渲染没错误，但是控制台报错….. 我们知道请求数据是异步请求，但是浏览器加载是先从html和css加载，后来才开始加载js，所以当浏览器加载css完毕之后，数据还没请求完毕，所以控制台会报错。。。。。</p>
-<p>解决办法： 我是写了个（data &amp;&amp; data.id），这样在data加载完毕之前，数据不会渲染。。。</p>
-<h4 id="路由地址栏参数改变url不变页面不刷新"><a href="#路由地址栏参数改变url不变页面不刷新" class="headerlink" title="路由地址栏参数改变url不变页面不刷新"></a>路由地址栏参数改变url不变页面不刷新</h4><p>我们在本页面改变地址栏参数页面不会刷新加载，所以当路由变化时进行监控。使用v-router的beforeRouteUpdate进行组件内守卫</p>
-<p>官网地址：<a href="https://router.vuejs.org/zh-cn/advanced/navigation-guards.html" target="_blank" rel="noopener">https://router.vuejs.org/zh-cn/advanced/navigation-guards.html</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">beforeRouteUpdate(to, from, next) &#123;</span><br><span class="line">    this.wareKind = to.query.kindId;</span><br><span class="line">    this.getDstCitiesByWareKind()</span><br><span class="line">    this.getWareList()</span><br><span class="line">    next()</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+  <li>
+    <span class="date">
+      2018-04-02
+    </span>
+    <a href="/2018/04/02/react学习之路/" class="title">
+      react学习之路
+    </a>
+  </li>
 
-        </div>
-      </article>
-    </div>
-    <!-- Pre or Next -->
-    
-	<div class="container" >
-           <ul class="pager">
-    	     
-      	     <li class="previous">
-              <a href="/2018/03/29/hello-world/" rel="prev">下一篇</a>
-             </li>
-           
-           
-              <li class="next">
-              <a href="/2018/03/26/面试题/" rel="prev">上一篇</a>
-            </li>
-           
+  <li>
+    <span class="date">
+      2018-03-29
+    </span>
+    <a href="/2018/03/29/virtualDOM理解/" class="title">
+      virtualDOM理解
+    </a>
+  </li>
+
+  <li>
+    <span class="date">
+      2018-03-29
+    </span>
+    <a href="/2018/03/29/index/" class="title">
+      开发遇坑集锦
+    </a>
+  </li>
+
+  <li>
+    <span class="date">
+      2018-03-29
+    </span>
+    <a href="/2018/03/29/hello-world/" class="title">
+      Hello World
+    </a>
+  </li>
+
+  <li>
+    <span class="date">
+      2018-03-26
+    </span>
+    <a href="/2018/03/26/面试题/" class="title">
+      面试题
+    </a>
+  </li>
+
+  <li>
+    <span class="date">
+      2018-03-26
+    </span>
+    <a href="/2018/03/26/获取cookie，设置cookie/" class="title">
+      获取cookie，设置cookie
+    </a>
+  </li>
+
+  <li>
+    <span class="date">
+      2018-03-26
+    </span>
+    <a href="/2018/03/26/推荐vuex插件/" class="title">
+      推荐vuex插件
+    </a>
+  </li>
+
+  <li>
+    <span class="date">
+      2018-03-26
+    </span>
+    <a href="/2018/03/26/let和const特性与区别/" class="title">
+      let和const特性与区别
+    </a>
+  </li>
+
+
           </ul>
-       </div>
-　　　　<!-- Comments -->
-    <div class="container">
-      
-<section id="comment">
-  <!-- <h1 class="title">留言</h1> -->
-
-  
-    <!-- 多说评论框 start -->
-        <script type="text/javascript">
-var duoshuoQuery = {short_name:"Ember7673"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-    <div class="ds-thread" data-thread-key="post-index" data-title="开发遇坑集锦" data-url="http://yoursite.com/2018/03/29/index/"></div>
-    <!-- 多说评论框 end -->
-  
-</section>
-
-
+        
+      </div>
     </div>
-   
-　　　　
   </div>
 </div>
 

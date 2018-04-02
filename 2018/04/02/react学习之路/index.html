@@ -16,7 +16,7 @@
 
   <!--Open Graph Title-->
   
-      <meta property="og:title" content="开发遇坑集锦"/>
+      <meta property="og:title" content="react学习之路"/>
   
   <!--Open Graph Description-->
   
@@ -42,7 +42,7 @@
     </script>
   <!-- Title -->
   
-  <title>开发遇坑集锦 - Hexo</title>
+  <title>react学习之路 - Hexo</title>
 
 
   <link rel="shortcut icon" href="/favicon.ico">
@@ -161,22 +161,21 @@
         <!-- Title date & tags -->
         <div class="post-header">
           <h1 class="entry-title">
-            开发遇坑集锦
+            react学习之路
             
           </h1>
          
         </div>
          <p class="a-posted-on">
-          2018-03-29
+          2018-04-02
           </p>
         <!-- Post Main Content -->
         <div class="entry-content">
-          <h3 id="移动端开发遇坑之路"><a href="#移动端开发遇坑之路" class="headerlink" title="移动端开发遇坑之路"></a>移动端开发遇坑之路</h3><h4 id="渲染时间问题"><a href="#渲染时间问题" class="headerlink" title="渲染时间问题"></a>渲染时间问题</h4><p>开发过程中，在调接口时会发现，数据渲染没错误，但是控制台报错….. 我们知道请求数据是异步请求，但是浏览器加载是先从html和css加载，后来才开始加载js，所以当浏览器加载css完毕之后，数据还没请求完毕，所以控制台会报错。。。。。</p>
-<p>解决办法： 我是写了个（data &amp;&amp; data.id），这样在data加载完毕之前，数据不会渲染。。。</p>
-<h4 id="路由地址栏参数改变url不变页面不刷新"><a href="#路由地址栏参数改变url不变页面不刷新" class="headerlink" title="路由地址栏参数改变url不变页面不刷新"></a>路由地址栏参数改变url不变页面不刷新</h4><p>我们在本页面改变地址栏参数页面不会刷新加载，所以当路由变化时进行监控。使用v-router的beforeRouteUpdate进行组件内守卫</p>
-<p>官网地址：<a href="https://router.vuejs.org/zh-cn/advanced/navigation-guards.html" target="_blank" rel="noopener">https://router.vuejs.org/zh-cn/advanced/navigation-guards.html</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">beforeRouteUpdate(to, from, next) &#123;</span><br><span class="line">    this.wareKind = to.query.kindId;</span><br><span class="line">    this.getDstCitiesByWareKind()</span><br><span class="line">    this.getWareList()</span><br><span class="line">    next()</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-
+          <h3 id="react"><a href="#react" class="headerlink" title="react"></a>react</h3><h4 id="react快速安装-create-react-app"><a href="#react快速安装-create-react-app" class="headerlink" title="react快速安装 create-react-app"></a>react快速安装 create-react-app</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ cnpm install -g create-react-app</span><br><span class="line">$ create-react-app my-app</span><br><span class="line">$ cd my-app/</span><br><span class="line">$ npm start</span><br></pre></td></tr></table></figure>
+<h2 id="create-react-app-执行慢的解决方法："><a href="#create-react-app-执行慢的解决方法：" class="headerlink" title="create-react-app 执行慢的解决方法："></a>create-react-app 执行慢的解决方法：</h2><p>在使用 <strong>create-react-app my-app</strong> 来创建一个新的React应用，在拉取各种资源时,往往会非常慢,一直卡在那：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fetchMetadata: sill mapToRegistry uri http://registry.npmjs.org/whatwg-fetch</span><br></pre></td></tr></table></figure>
+<p>可以看到资源还是使用了 npmjs.org，解决方法是换成淘宝的资源：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ npm config set registry https://registry.npm.taobao.org</span><br><span class="line">-- 配置后可通过下面方式来验证是否成功</span><br><span class="line">$ npm config get registry</span><br><span class="line">-- 或 npm info express</span><br></pre></td></tr></table></figure>
         </div>
       </article>
     </div>
@@ -185,13 +184,9 @@
 	<div class="container" >
            <ul class="pager">
     	     
-      	     <li class="previous">
-              <a href="/2018/03/29/hello-world/" rel="prev">下一篇</a>
-             </li>
-           
            
               <li class="next">
-              <a href="/2018/03/26/面试题/" rel="prev">上一篇</a>
+              <a href="/2018/03/29/virtualDOM理解/" rel="prev">上一篇</a>
             </li>
            
           </ul>
@@ -215,7 +210,7 @@ var duoshuoQuery = {short_name:"Ember7673"};
 		 || document.getElementsByTagName('body')[0]).appendChild(ds);
 	})();
 	</script>
-    <div class="ds-thread" data-thread-key="post-index" data-title="开发遇坑集锦" data-url="http://yoursite.com/2018/03/29/index/"></div>
+    <div class="ds-thread" data-thread-key="post-react学习之路" data-title="react学习之路" data-url="http://yoursite.com/2018/04/02/react学习之路/"></div>
     <!-- 多说评论框 end -->
   
 </section>
